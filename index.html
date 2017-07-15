@@ -1,1 +1,102 @@
-<!DOCTYPE html><html lang="en"></html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css"><link rel="stylesheet" href="main.css"><title>VideoQuest</title></head><body><div class="navbar-fixed"><nav class="nav-wrapper light-blue darken-3"><a class="brand-logo center" href="#">VideoQuest</a><ul class="right hide-on-med-and-down" id="nav-mobile"><li><a href="#">Crear VideoQuest</a></li><li><a href="#">Más info</a></li></ul></nav></div><section class="container"><div class="row s12"><h1 class="center-align main-title">Título del VideoQuest</h1></div><div class="row"><div class="col s12 m12"><div class="card horizontal teacher"><div class="card-image teacher__avatar valign-wrapper"><img src="boy.png"></div><div class="card-stacked teacher__content"><div class="card-content"><h3>Nombre del Profesor</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum dolores quibusdam accusantium, quo, ex vero. Nobis ut ipsa expedita aspernatur, qui delectus corporis praesentium, ullam! Dolorum corporis voluptatum pariatur laboriosam.</p></div></div></div></div></div></section><section class="container-fluid form-register blue-grey lighten-5"><header class="section-header"><h5>Identifícate</h5></header><div class="container"><div class="row"><form action=""><div class="input-field col s12 m4"><input class="validate" id="name" name="name" type="text"><label for="name">Nombre</label></div><div class="input-field col s12 m4"><input class="validate" id="registration" name="registration" type="text"><label for="registration">Matrícula</label></div><div class="input-field col s12 m4"><input class="validate" id="email" name="email" type="email"><label for="email">Email</label></div></form></div></div></section><section class="container-fluid video-section blue-grey darken-1"><header class="section-header"><h5 class="white-text">Analiza este video y contesta</h5></header><iframe width="560" height="315" src="https://www.youtube.com/embed/AZG6W3FI82M" frameborder="0" allowfullscreen="allowfullscreen"></iframe></section><section class="container-fluid questions-section blue-grey darken-1"><div class="container"><div class="row questions"><header class="section-header"><h5 class="white-text">Cuestionario</h5></header><div class="questions-container card" id="questions"><ul class="slides questions"><li class="question"><h4 class="question__title">¿Lorem ipsum dolor sit amet?</h4><div class="input-field"><textarea class="materialize-textarea" id="textarea1"></textarea><label for="textarea1">Escribe tu respuesta aquí</label></div></li><li class="question"><h4 class="question__title">¿consectetur adipisicing elit?</h4><p><input id="test1" name="group1" type="radio"><label for="test1">Lorem ipsum</label></p><p><input id="test2" name="group1" type="radio"><label for="test2">Lorem ipsum</label></p><p><input class="with-gap" id="test3" name="group1" type="radio"><label for="test3">Lorem ipsum</label></p></li></ul><div class="questions-nav"><span class="prev-question hoverable btn orange" id="prev">anterior</span><span class="next-question hoverable btn orange" id="next">siguiente</span></div></div></div></div></section><footer class="page-footer light-blue darken-3"><div class="container"><div class="row"><div class="col l6 s12"><h5 class="white-text">VideoQuest</h5><p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, fugit veritatis ad dolorem magnam, temporibus officiis accusamus, debitis ducimus quasi esse minima. Repellat doloribus repellendus, necessitatibus nulla similique harum fugiat.</p></div><div class="col l4 offset-l2 s12"><h5 class="white-text">Footer menú</h5><ul><li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li><li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li><li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li><li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li></ul></div></div></div><div class="footer-copyright"><div class="container">© 2014 Copyright Text<a class="grey-text text-lighten-4 right" href="#!">Link</a></div></div></footer><script src="https://code.jquery.com/jquery-2.1.1.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script><script src="main.js"></script></body>
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>VideoQuest</title></head>
+<body>
+<div class="navbar-fixed">
+    <nav class="nav-wrapper light-blue darken-3"><a class="brand-logo center" href="#">VideoQuest</a>
+        <ul class="right hide-on-med-and-down" id="nav-mobile">
+            <li><a href="#">Crear VideoQuest</a></li>
+            <li><a href="#">Más info</a></li>
+        </ul>
+    </nav>
+</div>
+<section class="container">
+    <div class="row s12"><h1 class="center-align main-title">Título del VideoQuest</h1></div>
+    <div class="row">
+        <div class="col s12 m12">
+            <div class="card horizontal teacher">
+                <div class="card-image teacher__avatar valign-wrapper"><img src="boy.png"></div>
+                <div class="card-stacked teacher__content">
+                    <div class="card-content"><h3>Nombre del Profesor</h3>
+                        <p>En esta zona se mostrará una descripción que será elaborada por el docente la cual
+                            le servirá como guía a los estudiantes para realizar el Videoquest cumpliendo las
+                            expectativas del docente. </p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container-fluid form-register blue-grey lighten-5">
+    <header class="section-header"><h5>Identifícate</h5></header>
+    <div class="container">
+        <div class="row">
+            <form action="">
+                <div class="input-field col s12 m4"><input class="validate" id="name" name="name" type="text"><label
+                        for="name">Nombre</label></div>
+                <div class="input-field col s12 m4"><input class="validate" id="registration" name="registration"
+                                                           type="text"><label for="registration">Matrícula</label></div>
+                <div class="input-field col s12 m4"><input class="validate" id="email" name="email" type="email"><label
+                        for="email">Email</label></div>
+            </form>
+        </div>
+    </div>
+</section>
+<section class="container-fluid video-section blue-grey darken-1">
+    <header class="section-header"><h5 class="white-text">Analiza El Video y Contesta las Preguntas</h5></header>
+    <iframe width="600" height="365" src="https://www.youtube.com/embed/AZG6W3FI82M" frameborder="0"
+            allowfullscreen="allowfullscreen"></iframe>
+</section>
+<section class="container-fluid questions-section blue-grey darken-1">
+    <div class="container">
+        <div class="row questions">
+            <header class="section-header"><h5 class="white-text">Cuestionario</h5></header>
+            <div class="questions-container card" id="questions">
+                <ul class="slides questions">
+                    <li class="question"><h4 class="question__title">¿Pregunta 1?</h4>
+                        <div class="input-field"><textarea class="materialize-textarea" id="textarea1"></textarea><label
+                                for="textarea1">Escribe tu respuesta aquí</label></div>
+                    </li>
+                    <li class="question"><h4 class="question__title">¿Pregunta 2?</h4>
+                        <p><input id="test1" name="group1" type="radio"><label for="test1">Respuesta 1</label></p>
+                        <p><input id="test2" name="group1" type="radio"><label for="test2">Respuesta 2</label></p>
+                        <p><input class="with-gap" id="test3" name="group1" type="radio"><label for="test3">Respuesta 3</label></p></li>
+                </ul>
+                <div class="questions-nav"><span class="prev-question hoverable btn orange"
+                                                 id="prev">anterior</span><span
+                        class="next-question hoverable btn orange" id="next">siguiente</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="page-footer light-blue darken-3">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12"><h5 class="white-text">VideoQuest</h5>
+                <p class="grey-text text-lighten-4">Esta plataforma web fue creada con el objetivo de servir como
+                    soporte para los docentes que desean implementar el modelo pedagógico Aula Invertida (Flipped
+                    Classroom).</p></div>
+            <div class="col l4 offset-l2 s12"><h5 class="white-text">Footer menú</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">© 2017 Todos los Derechos Reservados <a class="grey-text text-lighten-4 right" href="#!">Link</a></div>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+<script src="main.js"></script>
+</body>
